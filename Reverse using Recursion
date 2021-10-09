@@ -1,0 +1,5 @@
+def Reverse(arr,start,end):
+    if start<end:
+        arr[start],arr[end]=arr[end],arr[start]
+        Reverse(arr,start+1,end-1)
+    return arr
