@@ -1,0 +1,23 @@
+#Using recursion
+def Reverse(arr,start,end):
+    if start<end:
+        arr[start],arr[end]=arr[end],arr[start]
+        Reverse(arr,start+1,end-1)
+    return arr
+
+list = [1,2,3,4,5,6,7,8,9,10]
+print(Reverse(list,0,9))
+
+#Using bruteforce
+def __Reverse(arr):
+    n = len(arr)
+    i=0
+    while i<n:
+        arr[i],arr[n-1]=arr[n-1],arr[i]
+        i=i+1
+        n=n-1
+    return arr
+print(__Reverse(list))
+
+import jovian
+jovian.commit()
