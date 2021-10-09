@@ -1,0 +1,2 @@
+# MethodPython
+Python methods
